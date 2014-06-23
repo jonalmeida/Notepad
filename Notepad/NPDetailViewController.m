@@ -37,6 +37,7 @@
 
     if (self.detailItem) {
         self.detailDescriptionLabel.text = [self.detailItem description];
+        [self setTitle:[self.detailItem description]];
     }
 }
 
