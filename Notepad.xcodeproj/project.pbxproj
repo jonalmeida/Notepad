@@ -23,6 +23,7 @@
 		AB4EE14319566F2E000B7728 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB4EE11F19566F2E000B7728 /* UIKit.framework */; };
 		AB4EE14B19566F2E000B7728 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AB4EE14919566F2E000B7728 /* InfoPlist.strings */; };
 		AB4EE14D19566F2E000B7728 /* NotepadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB4EE14C19566F2E000B7728 /* NotepadTests.m */; };
+		ABED741E196DC39300B8ECA5 /* NPTableViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = ABED741D196DC39300B8ECA5 /* NPTableViewItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,8 @@
 		AB4EE14819566F2E000B7728 /* NotepadTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NotepadTests-Info.plist"; sourceTree = "<group>"; };
 		AB4EE14A19566F2E000B7728 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AB4EE14C19566F2E000B7728 /* NotepadTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotepadTests.m; sourceTree = "<group>"; };
+		ABED741C196DC39300B8ECA5 /* NPTableViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NPTableViewItem.h; sourceTree = "<group>"; };
+		ABED741D196DC39300B8ECA5 /* NPTableViewItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NPTableViewItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +130,8 @@
 				AB4EE13719566F2E000B7728 /* NPDetailViewController.m */,
 				AB4EE13919566F2E000B7728 /* Images.xcassets */,
 				AB4EE12219566F2E000B7728 /* Supporting Files */,
+				ABED741C196DC39300B8ECA5 /* NPTableViewItem.h */,
+				ABED741D196DC39300B8ECA5 /* NPTableViewItem.m */,
 			);
 			path = Notepad;
 			sourceTree = "<group>";
@@ -263,6 +268,7 @@
 				AB4EE13519566F2E000B7728 /* NPMasterViewController.m in Sources */,
 				AB4EE12819566F2E000B7728 /* main.m in Sources */,
 				AB4EE13819566F2E000B7728 /* NPDetailViewController.m in Sources */,
+				ABED741E196DC39300B8ECA5 /* NPTableViewItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,6 +483,7 @@
 				AB4EE15219566F2E000B7728 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AB4EE15319566F2E000B7728 /* Build configuration list for PBXNativeTarget "NotepadTests" */ = {
 			isa = XCConfigurationList;
@@ -485,6 +492,7 @@
 				AB4EE15519566F2E000B7728 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
