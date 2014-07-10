@@ -128,10 +128,10 @@
 				AB4EE13419566F2E000B7728 /* NPMasterViewController.m */,
 				AB4EE13619566F2E000B7728 /* NPDetailViewController.h */,
 				AB4EE13719566F2E000B7728 /* NPDetailViewController.m */,
-				AB4EE13919566F2E000B7728 /* Images.xcassets */,
-				AB4EE12219566F2E000B7728 /* Supporting Files */,
 				ABED741C196DC39300B8ECA5 /* NPTableViewItem.h */,
 				ABED741D196DC39300B8ECA5 /* NPTableViewItem.m */,
+				AB4EE13919566F2E000B7728 /* Images.xcassets */,
+				AB4EE12219566F2E000B7728 /* Supporting Files */,
 			);
 			path = Notepad;
 			sourceTree = "<group>";

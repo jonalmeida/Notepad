@@ -38,4 +38,16 @@
  */
 - (void) addItemTitle:(NSString *)title data:(id)data;
 
+/**
+ *  Returns item title.
+ *  @return Item title.
+ */
+- (NSString *) title;
+
+/**
+ *  Returns item data.
+ *  @return Item data.
+ */
+- (id) data;
+
 @end

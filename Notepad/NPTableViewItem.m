@@ -38,4 +38,12 @@
     [_item setObject:data forKey:@"data"];
 }
 
+- (NSString *) title {
+    return [_item objectForKey:@"title"];
+}
+
+- (id) data {
+    return [_item objectForKey:@"data"];
+}
+
 @end
