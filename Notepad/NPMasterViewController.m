@@ -7,8 +7,8 @@
 //
 
 #import "NPMasterViewController.h"
-
 #import "NPDetailViewController.h"
+#import "NPTableViewItem.h"
 
 @interface NPMasterViewController () {
     NSMutableArray *_objects;
@@ -49,7 +49,9 @@
     if (!_objects) {
         _objects = [[NSMutableArray alloc] init];
     }
-    [_objects insertObject:[NSDate date] atIndex:0];
+    
+    NPTableViewItem *newItem = [NPTableViewItem tableViewItemWithItemTitle:NSLocalizedString(@"New Note", @"New Note") data:@"Some data"];
+    [_objects insertObject:newItem atIndex:0];
     NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
     [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
 }
@@ -69,9 +71,14 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
-
-    NSDate *object = _objects[indexPath.row];
-    cell.textLabel.text = [object description];
+    
+    // Do something with this to make the item editable at some point
+    //UITextField *tempTextField = [[UITextField alloc] init];
+    //[cell.contentView addSubview:tempTextField];
+    
+    NPTableViewItem *tempItem = _objects[indexPath.row];
+    cell.textLabel.text = [tempItem title];
+    
     return cell;
 }
 
@@ -112,7 +119,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
-        NSDate *object = _objects[indexPath.row];
+        NPTableViewItem *object = _objects[indexPath.row];
         self.detailViewController.detailItem = object;
     }
 }
@@ -121,7 +128,7 @@
 {
     if ([[segue identifier] isEqualToString:@"showDetail"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        NSDate *object = _objects[indexPath.row];
+        NPTableViewItem *object = _objects[indexPath.row];
         [[segue destinationViewController] setDetailItem:object];
     }
 }

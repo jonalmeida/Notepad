@@ -7,6 +7,7 @@
 //
 
 #import "NPDetailViewController.h"
+#import "NPTableViewItem.h"
 
 @interface NPDetailViewController ()
 @property (strong, nonatomic) UIPopoverController *masterPopoverController;
@@ -36,8 +37,9 @@
     // Update the user interface for the detail item.
 
     if (self.detailItem) {
-        self.detailDescriptionLabel.text = [self.detailItem description];
-        [self setTitle:[self.detailItem description]];
+        self.detailDescriptionLabel.text = [(NPTableViewItem *) self.detailItem title];
+        // Pull data from a file here, throw it on the screen in an editable text box
+        [self setTitle:[(NPTableViewItem *) self.detailItem title]];
     }
 }
 
