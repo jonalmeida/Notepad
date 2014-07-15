@@ -37,7 +37,7 @@
     // Update the user interface for the detail item.
 
     if (self.detailItem) {
-        self.detailDescriptionLabel.text = [(NPTableViewItem *) self.detailItem title];
+        self.detailDescriptionLabel.text = [(NPTableViewItem *) self.detailItem data];
         // Pull data from a file here, throw it on the screen in an editable text box
         [self setTitle:[(NPTableViewItem *) self.detailItem title]];
     }
