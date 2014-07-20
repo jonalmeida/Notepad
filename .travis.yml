@@ -6,7 +6,7 @@ before_install:
     - brew update
     # - brew upgrade xctool
     - gem install cocoapods
-    - pod install
+    # - pod install
 
 xcode_workspace: Notepad.xcodeproj
 xcode_scheme: Notepad
